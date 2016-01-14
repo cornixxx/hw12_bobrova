@@ -1,0 +1,171 @@
+.h-page {
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e6ea;;
+}
+
+.h-page .logo {
+  float: left;
+  margin-bottom: 15px;
+}
+
+.twitter,
+.facebook {
+  position: relative;
+  float: left;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.twitter {
+  clear: left;
+  margin-right: 10px;
+  color: #28aae1;
+  border: 1px solid #28aae1;
+
+  &:hover {
+    color: $light-font-color;
+    background: #28aae1;
+  }
+}
+
+.facebook {
+  color: #3c5a99;
+  border: 1px solid #3c5a99;
+
+  &:hover {
+    color: $light-font-color;
+    background: #3c5a99;
+  }
+}
+
+.icon-twitter:before,
+.icon-facebook-1:before {
+  position: absolute;
+  font-size: 25px;
+  top: 8px;
+  left: 5px;
+}
+
+.h-page .navbar {
+  float: right;
+  margin-right: 5px;
+
+  .navbar-toggle .icon-bar {
+    background-color: $primary-color;
+  }
+}
+
+.h-page .navbar .navbar-nav a {
+  font-size: 1.2em;
+  color: #506a85;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid #9fabba;
+    border-radius: 22px;
+    padding: 14px;
+    background: #ffffff;
+  }
+}
+
+@include respond-to('medium') {
+  .h-page {
+    padding: 16px 0 0;
+  }
+
+  .logo {
+    margin-top: 9px;
+  }
+
+  .twitter,
+  .facebook {
+    float: right;
+    clear: none;
+    margin: 4px 10px 0;
+  }
+
+  .h-page .navbar {
+    margin: 10px -10px 0 0;
+  }
+
+  .h-page .navbar .navbar-nav li {
+    margin-right: 3px;
+  }
+}
+
+@include respond-to('large') {
+  .h-page {
+    padding: 16px 0 0;
+  }
+
+  .logo {
+    margin-top: 9px;
+  }
+
+  .twitter,
+  .facebook {
+    float: right;
+    clear: none;
+    margin-top: 4px;
+  }
+
+  .twitter {
+    margin-right: 0;
+  }
+
+  .facebook {
+    margin-right: 15px;
+  }
+
+  .h-page .navbar {
+    margin-top: 2px;
+    clear: none;
+  }
+
+  .h-page .navbar .navbar-nav li {
+    margin-right: 10px;
+  }
+}
+
+@include respond-to('huge') {
+  .h-page {
+    padding: 25px 0 15px;
+  }
+
+  .logo {
+    margin: 9px 0 0 15px;
+  }
+
+  .twitter,
+  .facebook {
+    float: right;
+    clear: none;
+    margin-top: 4px;
+  }
+
+  .twitter {
+    margin-right: 15px;
+  }
+
+  .facebook {
+    margin-right: 10px;
+  }
+
+  .h-page .navbar {
+    margin-top: 0;
+    clear: none;
+  }
+
+  .h-page .navbar .navbar-nav li {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 5px;
+    }
+  }
+}
+
+

@@ -1,0 +1,121 @@
+.team {
+  background: #edeff1;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.team h2 {
+  color: $primary-color;
+}
+
+.team h2+p {
+  color: $second-font-color
+}
+.team article {
+  padding: 0 15px;
+  margin-bottom: 25px;
+}
+
+.team-block h3 {
+  color: $main-font-color;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+.team-block p {
+  color: $second-font-color;
+  font-size: 1.2em;
+  line-height: 1.67;
+  font-weight: 300;
+}
+
+.team .button {
+  background: $about-color;
+  color: $light-font-color;
+
+  &:hover {
+    background: rgba($about-color, 0.5);
+    border: 2px solid $about-color;
+  }
+}
+
+@include respond-to('medium') {
+  .team {
+    padding: 45px 0 60px;
+  }
+
+  .team article {
+    width: 50%;
+    float: left;
+  }
+
+  .team article:nth-child(2n-1) {
+    clear: both;
+  }
+
+  .team-block h3 {
+    margin: 20px 0 10px;
+  }
+
+  .team-block p {
+    font-size: 1.1em;
+  }
+
+  .team .button {
+    margin-top: 40px;
+  }
+}
+
+@include respond-to('large') {
+  .team {
+    padding: 85px 0 100px;
+  }
+
+  .team article {
+    width: 25%;
+    float: left;
+  }
+
+  .team article:nth-child(4n-1) {
+    clear: both;
+  }
+
+  .team article:nth-child(2n-1) {
+    clear: none;
+  }
+
+  .team-block h3 {
+    margin: 30px 0 15px;
+  }
+
+  .team-block p {
+    font-size: 1em;
+  }
+}
+
+@include respond-to('huge') {
+  .team {
+    padding: 105px 0 120px;
+  }
+
+  .team article {
+    width: 25%;
+    float: left;
+  }
+
+  .team article:nth-child(4n-1) {
+    clear: both;
+  }
+
+  .team article:nth-child(2n-1) {
+    clear: none;
+  }
+
+  .team-block h3 {
+    margin: 40px 0 20px;
+  }
+
+  .team-block p {
+    font-size: 1em;
+  }
+}

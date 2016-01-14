@@ -1,0 +1,132 @@
+.f-page {
+  background: $primary-color;
+  color: $light-font-color;
+  padding: 30px 0 40px;
+}
+
+.f-page .links-block {
+  margin-bottom: 15px;
+}
+
+.f-page ul {
+  list-style-type: none;
+  width: 50%;
+  float: left;
+
+  &:nth-child(2n-1) {
+    clear: both;
+  }
+}
+
+.f-page ul {
+  margin-bottom: 30px;
+
+  &:nth-child(2n) li {
+    padding-left: 40px;
+  }
+}
+
+.f-page ul a {
+  color: $light-font-color;
+  font-size: 1.1em;
+  line-height: 2;
+
+  &:hover {
+    color: $light-font-color;
+    text-decoration: underline overline;
+  }
+}
+
+.f-page p {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 0.9;
+  text-align: center;
+
+  a {
+    color: $light-font-color;
+    font-weight: 700;
+  }
+}
+
+@include respond-to('medium') {
+  .f-page {
+    padding: 40px 0 55px;
+  }
+
+  .f-page .links-block {
+    margin-bottom: 35px;
+  }
+
+  .f-page ul {
+    width: 25%;
+    float: left;
+
+    &:nth-child(2n-1) {
+      clear: none;
+    }
+
+    &:nth-child(2n) li {
+      padding-left: 0;
+    }
+  }
+
+  .f-page ul a {
+    font-size: 1em;
+  }
+}
+
+@include respond-to('large') {
+  .f-page {
+    padding: 60px 0 75px;
+  }
+
+  .f-page .links-block {
+    margin-bottom: 50px;
+  }
+
+  .f-page ul {
+    width: 25%;
+    float: left;
+
+    &:nth-child(2n-1) {
+      clear: none;
+    }
+
+    &:nth-child(2n) li {
+      padding-left: 0;
+    }
+  }
+
+  .f-page ul a {
+      font-size: 1em;
+  }
+}
+
+@include respond-to('huge') {
+  .f-page {
+    padding: 80px 0 115px;
+  }
+
+  .f-page .links-block {
+    margin-bottom: 90px;
+  }
+
+  .f-page ul {
+    width: 25%;
+    float: left;
+
+    &:nth-child(2n-1) {
+      clear: none;
+    }
+
+    &:nth-child(2n) li {
+      padding-left: 0;
+    }
+  }
+
+  .f-page ul a {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,34 @@
+.creativity {
+  background: #e65a5a url('../img/creativity-bg.jpg') no-repeat top center;
+  background-size: cover;
+  padding: 80px 0 40px;
+}
+
+@include respond-to('medium') {
+  .creativity {
+    padding: 170px 0 90px;
+  }
+}
+
+@include respond-to('large') {
+  .creativity {
+    padding: 250px 0 140px;
+  }
+}
+
+@include respond-to('huge'){
+  .creativity {
+    padding: 355px 0 195px;
+  }
+}
+
+.creativity .button {
+  background: $primary-color;
+  color: $light-font-color;
+  box-shadow: 0 0 133.6px 27.4px white;
+
+  &:hover {
+    background: rgba($primary-color, 0.7);
+    border: 2px solid $primary-color;
+  }
+}

@@ -1,0 +1,29 @@
+a:hover {
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+h2+p {
+  margin-bottom: 30px;
+}
+
+@include respond-to('medium') {
+  h2+p {
+    margin-bottom: 50px;
+  }
+}
+
+@include respond-to('large') {
+  h2+p {
+    margin-bottom: 70px;
+  }
+}
+
+@include respond-to('huge') {
+  h2+p {
+    margin-bottom: 90px;
+  }
+}

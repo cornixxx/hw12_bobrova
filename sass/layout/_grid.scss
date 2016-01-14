@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-width: 320px;
+}
+
+.m-page {
+  display: block;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1230px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+
+  @include respond-to('medium') {
+    height: 400px;
+  }
+
+  @include respond-to('large') {
+    height: 450px;
+  }
+
+  @include respond-to('huge') {
+    height: 590px;
+  }
+}
